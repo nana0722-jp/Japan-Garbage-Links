@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ごみナビ管理者画面 - Godファイル生成</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        #drop-area {
+            border: 3px dashed #aaa;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #777;
+            background: #f9f9f9;
+            transition: 0.3s;
+        }
+
+            #drop-area.hover {
+                border-color: #333;
+                background: #eee;
+            }
+
+        #result {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            max-height: 400px;
+            overflow-y: auto;
+            display: none;
+        }
+
+        .download-btn {
+            display: none;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🛠 ごみナビ 管理者画面</h1>
+    <p>総務省の「全国地方公共団体コード」Excelファイルをドロップして、マスターデータ（Godファイル）を生成します。</p>
+
+    <div id="drop-area">ここにExcelファイルをドラッグ＆ドロップ</div>
+
+    <button id="download-btn" class="download-btn">JSONをダウンロード</button>
+    <div id="result"></div>
+
+    <script>
+        const dropArea = document.getElementById('drop-area');
+        const resultArea = document.getElementById('result');
+        const downloadBtn = document.getElementById('download-btn');
+        let generatedJson = null;
+
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, e => { e.preventDefault(); e.stopPropagation(); });
+        });
+
+        dropArea.addEventListener('dragover', () => dropArea.classList.add('hover'));
+        dropArea.addEventListener('dragleave', () => dropArea.classList.remove('hover'));
+
+        dropArea.addEventListener('drop', (e) => {
+            dropArea.classList.remove('hover');
+            const file = e.dataTransfer.files[0];
+            const reader = new FileReader();
+
+            reader.onload = (event) => {
+                const data = new Uint8Array(event.target.result);
+                const workbook = XLSX.read(data, {type: 'array'});
+                processWorkbook(workbook);
+            };
+            reader.readAsArrayBuffer(file);
+        });
+
+        function processWorkbook(workbook) {
+            let godData = [];
+
+            // すべてのシートを順番に処理
+            workbook.SheetNames.forEach(sheetName => {
+                const sheet = workbook.Sheets[sheetName];
+                // 空行を無視せず、2次元配列として取得
+                const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+                let startRow = -1;
+                let startCol = -1;
+                let headers = [];
+
+                // 1. そのシート内で「コード」という文字が含まれるセルを探す
+                for (let i = 0; i < rows.length; i++) {
+                    if (!rows[i]) continue;
+                    for (let j = 0; j < rows[i].length; j++) {
+                        if (String(rows[i][j]).includes('コード')) {
+                            startRow = i;
+                            startCol = j;
+                            break;
+                        }
+                    }
+                    if (startRow !== -1) break;
+                }
+
+                if (startRow === -1) return; // 「コード」がないシートはスキップ
+
+                // 2. 項目名（ヘッダー）の取得
+                for (let j = startCol; j < rows[startRow].length; j++) {
+                    let hName = String(rows[startRow][j] || "").replace(/\s/g, '');
+                    if (!hName) break;
+                    headers.push(hName);
+                }
+
+                // 3. データ行の抽出
+                for (let i = startRow + 1; i < rows.length; i++) {
+                    const rowData = rows[i];
+                    if (!rowData) continue;
+
+                    const codeVal = String(rowData[startCol] || "").trim();
+
+                    // コードが数字5〜6桁であることを確認（空欄やフッターを避ける）
+                    if (!/^\d{5,6}$/.test(codeVal)) {
+                        // もし数字じゃなくなったらそのシートのデータは終わりとみなす
+                        if (codeVal === "undefined" || codeVal === "") continue;
+                        // 一応、完全に数字でなくなったらブレイクするが、
+                        // 途中に空行がある可能性を考慮して判定は慎重に。
+                    }
+
+                    if (/^\d{5,6}$/.test(codeVal)) {
+                        let rowObj = { "シート名": sheetName }; // どのシート由来か一応記録
+                        headers.forEach((header, index) => {
+                            let cellValue = rowData[startCol + index];
+                            rowObj[header] = cellValue !== undefined ? cellValue : "";
+                        });
+                        godData.push(rowObj);
+                    }
+                }
+            });
+
+            // 結果の反映
+            generatedJson = godData;
+            resultArea.textContent = JSON.stringify(godData, null, 2);
+            resultArea.style.display = 'block';
+            downloadBtn.style.display = 'inline-block';
+            dropArea.textContent = "全シート解析完了！ 合計 " + godData.length + "件をがっちゃんこしました。";
+        }
+
+
+
+        if (startRow !== -1) break;
+                }
+
+                if (startRow === -1) return;
+
+                // 2. 項目名（ヘッダー）の取得
+                for (let j = startCol; j < rows[startRow].length; j++) {
+                    if (!rows[startRow][j]) break;
+                    headers.push(String(rows[startRow][j]).replace(/\s/g, ''));
+                }
+
+                // 3. データ行の抽出（コードが数字である限り）
+                for (let i = startRow + 1; i < rows.length; i++) {
+                    const codeVal = String(rows[i][startCol]).trim();
+                    if (!/^\d+$/.test(codeVal)) break;
+
+                    let rowObj = {};
+                    headers.forEach((header, index) => {
+                        rowObj[header] = rows[i][startCol + index] || "";
+                    });
+                    godData.push(rowObj);
+                }
+            });
+
+            generatedJson = godData;
+            resultArea.textContent = JSON.stringify(godData, null, 2);
+            resultArea.style.display = 'block';
+            downloadBtn.style.display = 'inline-block';
+            dropArea.textContent = "解析完了！ " + godData.length + "件のデータを抽出しました。";
+        }
+
+        downloadBtn.onclick = () => {
+            const blob = new Blob([JSON.stringify(generatedJson, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'god_cities.json';
+            a.click();
+        };
+    </script>
+</body>
+</html>
