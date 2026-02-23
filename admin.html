@@ -110,13 +110,15 @@
         // --- 3. 解析ロジック（全シート対応版） ---
         function processWorkbook(workbook) {
             let godData = [];
+            let codeMap = new Set(); // 重複チェック用のセット
+
             workbook.SheetNames.forEach(sheetName => {
                 const sheet = workbook.Sheets[sheetName];
                 const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
 
                 let startRow = -1, startCol = -1, headers = [];
 
-                // 「コード」セルを探す
+                // 1. 「コード」セルを探す
                 for (let i = 0; i < rows.length; i++) {
                     if (!rows[i]) continue;
                     for (let j = 0; j < rows[i].length; j++) {
@@ -129,33 +131,51 @@
 
                 if (startRow === -1) return;
 
-                // ヘッダー取得
+                // 2. ヘッダー取得と正規化（表記ゆれ吸収）
                 for (let j = startCol; j < rows[startRow].length; j++) {
                     let hName = String(rows[startRow][j] || "").replace(/\s/g, '');
                     if (!hName) break;
+
+                    // 表記ゆれを統一： (漢字) (カナ) (ｶﾅ) などを標準化
+                    hName = hName.replace(/（漢字）/g, '')
+                        .replace(/（カナ）/g, 'カナ')
+                        .replace(/（ｶﾅ）/g, 'カナ')
+                        .replace(/別シート/g, '');
                     headers.push(hName);
                 }
 
-                // データ抽出
+                // 3. データ抽出
                 for (let i = startRow + 1; i < rows.length; i++) {
                     if (!rows[i]) continue;
-                    const codeVal = String(rows[i][startCol] || "").trim();
-                    if (/^\d{5,6}$/.test(codeVal)) {
-                        let rowObj = { "元シート": sheetName };
+                    const rawCode = String(rows[i][startCol] || "").trim();
+
+                    if (/^\d{5,6}$/.test(rawCode)) {
+                        // すでに同じコードを処理済みならスキップ（重複排除）
+                        if (codeMap.has(rawCode)) continue;
+
+                        let rowObj = {};
                         headers.forEach((h, idx) => {
-                            rowObj[h] = rows[i][startCol + idx] !== undefined ? rows[i][startCol + idx] : "";
+                            let val = rows[i][startCol + idx];
+                            rowObj[h] = (val !== undefined && val !== null) ? String(val).trim() : "";
                         });
+
+                        // 団体コードを保存し、チェック用セットに追加
+                        rowObj["団体コード"] = rawCode;
+                        codeMap.add(rawCode);
                         godData.push(rowObj);
                     }
                 }
             });
+
+            // 最後にコード順に並び替えるとさらに美しい
+            godData.sort((a, b) => parseInt(a.団体コード) - parseInt(b.団体コード));
+
             generatedJson = godData;
             resultArea.textContent = JSON.stringify(godData, null, 2);
             resultArea.style.display = 'block';
             downloadBtn.style.display = 'inline-block';
-            dropArea.textContent = "解析完了！ " + godData.length + "件抽出しました。";
+            dropArea.textContent = "クレンジング完了！ " + godData.length + "件のユニークなデータを抽出しました。";
         }
-
         downloadBtn.onclick = () => {
             const blob = new Blob([JSON.stringify(generatedJson, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
