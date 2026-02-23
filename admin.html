@@ -67,24 +67,43 @@
         const downloadBtn = document.getElementById('download-btn');
         let generatedJson = null;
 
+        // ブラウザのデフォルト動作（ファイルを開く）を完全に封じ込める
         ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-            dropArea.addEventListener(eventName, e => { e.preventDefault(); e.stopPropagation(); });
+            dropArea.addEventListener(eventName, e => {
+                e.preventDefault();  // ブラウザのデフォルト動作を停止
+                e.stopPropagation(); // 親要素へのイベント伝填を停止
+            }, false);
         });
 
-        dropArea.addEventListener('dragover', () => dropArea.classList.add('hover'));
-        dropArea.addEventListener('dragleave', () => dropArea.classList.remove('hover'));
+        // ドラッグ中の見た目の変化だけ付ける
+        dropArea.addEventListener('dragover', () => {
+            dropArea.classList.add('hover');
+        });
 
+        dropArea.addEventListener('dragleave', () => {
+            dropArea.classList.remove('hover');
+        });
+
+        // ドロップした時の実際の処理
         dropArea.addEventListener('drop', (e) => {
             dropArea.classList.remove('hover');
-            const file = e.dataTransfer.files[0];
-            const reader = new FileReader();
 
-            reader.onload = (event) => {
-                const data = new Uint8Array(event.target.result);
-                const workbook = XLSX.read(data, {type: 'array'});
-                processWorkbook(workbook);
-            };
-            reader.readAsArrayBuffer(file);
+            // データを取り出す
+            const dt = e.dataTransfer;
+            const files = dt.files;
+
+            if (files && files.length > 0) {
+                const file = files[0];
+                console.log("ファイルを受け取りました:", file.name);
+
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    const data = new Uint8Array(event.target.result);
+                    const workbook = XLSX.read(data, { type: 'array' });
+                    processWorkbook(workbook); // ここで解析を実行
+                };
+                reader.readAsArrayBuffer(file);
+            }
         });
 
         function processWorkbook(workbook) {
