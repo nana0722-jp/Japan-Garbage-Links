@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>🔗 ごみナビ：リンク登録エディタ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fdfdfd;
+        }
+
+        select, input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+            input[type="text"] {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+        .flex {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid #999;
+        }
+
+        .btn-search {
+            background: #4285f4;
+            color: white;
+            border: none;
+        }
+
+        .btn-save {
+            background: #28a745;
+            color: white;
+            border: none;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        #status {
+            color: #d9534f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🔗 リンク登録エディタ</h1>
+    <p>1. 自治体を選択 → 2. 検索してURL確認 → 3. 貼り付けて保存</p>
+
+    <div class="box">
+        <div class="flex">
+            <select id="prefSelect"><option value="">都道府県を選択</option></select>
+            <select id="citySelect"><option value="">市区町村を選択</option></select>
+            <button class="btn-search" onclick="searchGoogle()">🔍 Googleで検索</button>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <label id="targetLabel">ここにURLを入力:</label>
+            <input type="text" id="urlInput" placeholder="https://www.city.example.lg.jp/garbage/">
+            <button class="btn-save" onclick="addToDict()">この自治体のURLをリストに追加</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>現在の登録セッション (一時保存中)</h3>
+    <textarea id="jsonPreview" style="width:100%; height:200px; font-family: monospace;" readonly></textarea>
+    <button onclick="downloadJSON()" style="width:100%;">現在の全リストを links.json として保存</button>
+
+    <script>
+        let godData = [];
+        let linksDict = {}; // { "コード": "URL" }
+
+        // 1. 起動時に god.json を読み込む
+        fetch('god_cities.json')
+            .then(response => response.json())
+            .then(data => {
+                godData = data;
+                initPrefSelect();
+            })
+            .catch(err => alert("god_cities.jsonが見つかりません。先にadmin.htmlで作成してください。"));
+
+        function initPrefSelect() {
+            const prefs = [...new Set(godData.map(item => item.都道府県名))];
+            const select = document.getElementById('prefSelect');
+            prefs.forEach(pref => {
+                const opt = document.createElement('option');
+                opt.value = opt.textContent = pref;
+                select.appendChild(opt);
+            });
+        }
+
+        // 都道府県が変わったら市区町村を更新
+        document.getElementById('prefSelect').onchange = function() {
+            const citySelect = document.getElementById('citySelect');
+            citySelect.innerHTML = '<option value="">市区町村を選択</option>';
+            const filtered = godData.filter(item => item.都道府県名 === this.value);
+            filtered.forEach(item => {
+                const opt = document.createElement('option');
+                opt.value = item.団体コード;
+                opt.textContent = (item.市区町村名 || "") + (item.政令指定都市名 || "");
+                citySelect.appendChild(opt);
+            });
+        };
+
+        // 🔍 Google検索ボタン
+        function searchGoogle() {
+            const pref = document.getElementById('prefSelect').value;
+            const cityOpt = document.getElementById('citySelect').selectedOptions[0];
+            if (!pref || !cityOpt.value) return alert("自治体を選択してください");
+
+            const query = `${pref} ${cityOpt.textContent} ごみ 分別`;
+            window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+        }
+
+        // ✅ リストに追加
+        function addToDict() {
+            const code = document.getElementById('citySelect').value;
+            const url = document.getElementById('urlInput').value.trim();
+            if (!code || !url) return alert("自治体選択とURL入力が必要です");
+
+            linksDict[code] = url;
+            document.getElementById('jsonPreview').value = JSON.stringify(linksDict, null, 2);
+            document.getElementById('urlInput').value = ""; // 入力欄をクリア
+            alert("追加しました！");
+        }
+
+        // 💾 JSONとしてダウンロード
+        function downloadJSON() {
+            const blob = new Blob([JSON.stringify(linksDict, null, 2)], {type: 'application/json'});
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'links.json';
+            a.click();
+        }
+    </script>
+</body>
+</html>
