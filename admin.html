@@ -145,26 +145,34 @@
                 }
 
                 // 3. データ抽出
+                // データ抽出ループの中
                 for (let i = startRow + 1; i < rows.length; i++) {
                     if (!rows[i]) continue;
                     const rawCode = String(rows[i][startCol] || "").trim();
 
                     if (/^\d{5,6}$/.test(rawCode)) {
-                        // すでに同じコードを処理済みならスキップ（重複排除）
-                        if (codeMap.has(rawCode)) continue;
-
                         let rowObj = {};
                         headers.forEach((h, idx) => {
                             let val = rows[i][startCol + idx];
                             rowObj[h] = (val !== undefined && val !== null) ? String(val).trim() : "";
                         });
 
-                        // 団体コードを保存し、チェック用セットに追加
+                        // --- 🌟 政令市の「区」を除外するロジック 🌟 ---
+                        // 「政令指定都市名」に何か入っていて、かつ「市区町村名」が空、
+                        // または「市区町村名」が既に親の市名を含んでいる場合などは除外
+                        if (rowObj["政令指定都市名"] && rowObj["政令指定都市名"] !== "") {
+                            // 「区」のデータはスキップして、親の「市」だけを残す
+                            continue;
+                        }
+                        // --------------------------------------------
+
+                        if (codeMap.has(rawCode)) continue;
                         rowObj["団体コード"] = rawCode;
                         codeMap.add(rawCode);
                         godData.push(rowObj);
                     }
                 }
+
             });
 
             // 最後にコード順に並び替えるとさらに美しい
