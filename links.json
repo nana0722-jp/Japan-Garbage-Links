@@ -1,0 +1,79 @@
+{
+  "111007": {
+    "url": "https://www.city.saitama.lg.jp/001/006/010/007/p041882.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さいちゃん",
+    "updatedAt": "2026/2/23"
+  },
+  "112011": {
+    "url": "https://play.google.com/store/apps/details?id=jp.gomisuke.app.Gomisuke0002&hl=ja&pli=1",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "川越市ゴミ分別あぷり",
+    "updatedAt": "2026/2/23"
+  },
+  "112020": {
+    "url": "https://play.google.com/store/apps/details?id=jp.gomisuke.app.Gomisuke0029&hl=ja",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "熊谷市ゴミ分別アプリ",
+    "updatedAt": "2026/2/23"
+  },
+  "112038": {
+    "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/ja0318.pdf",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/23"
+  },
+  "112062": {
+    "url": "https://www.city.gyoda.lg.jp/material/files/group/18/r5_7manyual.pdf",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/23"
+  },
+  "112071": {
+    "url": "https://www.c-kouiki.jp/gomi-2-2-2-2-2-2/katei-1/",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/23"
+  },
+  "112089": {
+    "url": "https://www.city.tokorozawa.saitama.jp/kurashi/gomi/gomidashikata/index.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "わけトコっ！",
+    "updatedAt": "2026/2/23"
+  },
+  "112097": {
+    "url": "https://www.city.hanno.lg.jp/soshikikarasagasu/kankyokeizaibu/cleancenter/4/903.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/23"
+  },
+  "112101": {
+    "url": "https://www.gomisaku.jp/0007/",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "外部サイト　一覧表示あり",
+    "updatedAt": "2026/2/23"
+  },
+  "112119": {
+    "url": "https://www.city.honjo.lg.jp/material/files/group/17/HP_R70401gomipannhu.pdf",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "児玉郡市ごみ分別アプリ",
+    "updatedAt": "2026/2/23"
+  },
+  "112127": {
+    "url": "https://www.city.higashimatsuyama.lg.jp/garbage-item/search/search.php",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "pdfファイルあり",
+    "updatedAt": "2026/2/23"
+  }
+}

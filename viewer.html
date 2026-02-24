@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>🏆 ごみナビ：全国制覇への道</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f4f7f6;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 進捗バー */
+        .progress-container {
+            background: #e0e0e0;
+            border-radius: 20px;
+            height: 30px;
+            width: 100%;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, #28a745, #85d084);
+            height: 100%;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .stat-item span {
+            display: block;
+            font-size: 2em;
+            color: #28a745;
+        }
+
+        /* リスト表示 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #28a745;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .tag {
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .tag-app {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .tag-pdf {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .filter-box {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🏆 全国制覇への進捗</h1>
+        <div class="progress-container">
+            <div id="progressBar" class="progress-bar" style="width: 0%"></div>
+        </div>
+        <div class="stats">
+            <div class="stat-item">制覇した自治体<span id="doneCount">0</span></div>
+            <div class="stat-item">全自治体数<span id="totalCount">1,965</span></div>
+            <div class="stat-item">達成率<span id="percent">0%</span></div>
+        </div>
+    </div>
+
+    <input type="text" id="filterInput" class="filter-box" placeholder="自治体名で検索..." onkeyup="filterTable()">
+
+    <div style="overflow-x: auto;">
+        <table id="linksTable">
+            <thead>
+                <tr>
+                    <th>自治体名</th>
+                    <th>種別</th>
+                    <th>URL</th>
+                    <th>備考</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        async function init() {
+            try {
+                // 両方のファイルを読み込む
+                const [godRes, linksRes] = await Promise.all([
+                    fetch('god_cities.json'),
+                    fetch('links.json')
+                ]);
+                const godData = await godRes.json();
+                const linksData = await linksRes.json();
+
+                const total = godData.length;
+                const done = Object.keys(linksData).length;
+                const ratio = ((done / total) * 100).toFixed(1);
+
+                // 統計の更新
+                document.getElementById('totalCount').textContent = total.toLocaleString();
+                document.getElementById('doneCount').textContent = done.toLocaleString();
+                document.getElementById('percent').textContent = ratio + "%";
+                document.getElementById('progressBar').style.width = ratio + "%";
+
+                // テーブルの作成（links.jsonにあるものだけ表示）
+                const body = document.getElementById('tableBody');
+
+                // 表示用にgodDataから名前を引く
+                Object.entries(linksData).reverse().forEach(([code, data]) => {
+                    const cityInfo = godData.find(item => item.団体コード === code);
+                    const row = body.insertRow();
+
+                    const name = cityInfo ? (cityInfo.都道府県名 + cityInfo.市区町村名 + (cityInfo.政令指定都市名 || "")) : "不明 (" + code + ")";
+                    row.insertCell(0).textContent = name;
+
+                    let tags = "";
+                    if (data.isApp) tags += '<span class="tag tag-app">📱アプリ</span> ';
+                    if (data.isPdf) tags += '<span class="tag tag-pdf">📄PDF</span>';
+                    row.insertCell(1).innerHTML = tags;
+
+                    const urlCell = row.insertCell(2);
+                    urlCell.innerHTML = `<a href="${data.url}" target="_blank">表示</a>`;
+
+                    row.insertCell(3).textContent = data.memo || "";
+                });
+
+            } catch (e) {
+                console.error(e);
+                document.body.innerHTML += "<p style='color:red; text-align:center;'>links.json または god_cities.json が読み込めません。GitHubにアップロードされているか確認してください。</p>";
+            }
+        }
+
+        function filterTable() {
+            const input = document.getElementById('filterInput').value.toLowerCase();
+            const rows = document.getElementById('tableBody').getElementsByTagName('tr');
+            for (let row of rows) {
+                const text = row.cells[0].textContent.toLowerCase();
+                row.style.display = text.includes(input) ? "" : "none";
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>
