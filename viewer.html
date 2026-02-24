@@ -2,11 +2,11 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>🏆 ごみナビ：全国制覇への道</title>
+    <title>🏆 全国制覇への道：進捗マップ</title>
     <style>
         body {
             font-family: sans-serif;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 20px auto;
             padding: 20px;
             background: #f4f7f6;
@@ -19,56 +19,104 @@
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             margin-bottom: 20px;
+        }
+
+        .stats-header {
             text-align: center;
         }
 
-        /* 進捗バー */
+        /* 全体進捗バー */
         .progress-container {
             background: #e0e0e0;
             border-radius: 20px;
-            height: 30px;
+            height: 25px;
             width: 100%;
-            margin: 20px 0;
+            margin: 15px 0;
             overflow: hidden;
         }
 
         .progress-bar {
             background: linear-gradient(90deg, #28a745, #85d084);
             height: 100%;
-            transition: width 0.5s ease-in-out;
+            transition: width 0.5s;
         }
 
-        .stats {
+        .main-stats {
             display: flex;
             justify-content: space-around;
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: bold;
+            margin-bottom: 20px;
         }
 
-        .stat-item span {
-            display: block;
-            font-size: 2em;
-            color: #28a745;
+            .main-stats span {
+                display: block;
+                font-size: 2em;
+                color: #28a745;
+            }
+
+        /* 都道府県別エリア */
+        .pref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
         }
 
-        /* リスト表示 */
+        .pref-item {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.85em;
+        }
+
+        .pref-name {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .pref-mini-bar {
+            background: #eee;
+            height: 6px;
+            border-radius: 3px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+
+        .pref-mini-fill {
+            background: #28a745;
+            height: 100%;
+        }
+
+        .completed {
+            background: #d4edda;
+            border-color: #c3e6cb;
+        }
+
+        /* テーブル */
         table {
             width: 100%;
             border-collapse: collapse;
             background: white;
             border-radius: 10px;
             overflow: hidden;
+            margin-top: 20px;
         }
 
         th, td {
-            padding: 12px;
+            padding: 10px;
             text-align: left;
             border-bottom: 1px solid #eee;
+            font-size: 0.9em;
         }
 
         th {
-            background: #28a745;
+            background: #666;
             color: white;
+            position: sticky;
+            top: 0;
         }
 
         tr:nth-child(even) {
@@ -76,66 +124,55 @@
         }
 
         .tag {
-            padding: 3px 8px;
-            border-radius: 5px;
-            font-size: 0.8em;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75em;
             font-weight: bold;
+            margin-right: 3px;
         }
 
         .tag-app {
             background: #e3f2fd;
             color: #1976d2;
         }
-
-        .tag-pdf {
-            background: #fff3e0;
-            color: #e65100;
-        }
-
-        .filter-box {
-            margin-bottom: 15px;
-            padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>🏆 全国制覇への進捗</h1>
+    <div class="card stats-header">
+        <h1>🏆 全国制覇の進捗状況</h1>
         <div class="progress-container">
             <div id="progressBar" class="progress-bar" style="width: 0%"></div>
         </div>
-        <div class="stats">
-            <div class="stat-item">制覇した自治体<span id="doneCount">0</span></div>
-            <div class="stat-item">全自治体数<span id="totalCount">1,965</span></div>
-            <div class="stat-item">達成率<span id="percent">0%</span></div>
+        <div class="main-stats">
+            <div>制覇自治体<span id="doneCount">0</span></div>
+            <div>全自治体<span id="totalCount">-</span></div>
+            <div>達成率<span id="percent">0%</span></div>
+        </div>
+
+        <hr>
+        <h3>都道府県別の達成率</h3>
+        <div id="prefGrid" class="pref-grid">
         </div>
     </div>
 
-    <input type="text" id="filterInput" class="filter-box" placeholder="自治体名で検索..." onkeyup="filterTable()">
-
-    <div style="overflow-x: auto;">
+    <div style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h3>📝 最近登録した自治体（最新50件）</h3>
         <table id="linksTable">
             <thead>
                 <tr>
                     <th>自治体名</th>
-                    <th>種別</th>
-                    <th>URL</th>
+                    <th>詳細</th>
                     <th>備考</th>
                 </tr>
             </thead>
-            <tbody id="tableBody">
-            </tbody>
+            <tbody id="tableBody"></tbody>
         </table>
     </div>
 
     <script>
         async function init() {
             try {
-                // 両方のファイルを読み込む
                 const [godRes, linksRes] = await Promise.all([
                     fetch('god_cities.json'),
                     fetch('links.json')
@@ -144,53 +181,62 @@
                 const linksData = await linksRes.json();
 
                 const total = godData.length;
-                const done = Object.keys(linksData).length;
-                const ratio = ((done / total) * 100).toFixed(1);
+                const doneIds = Object.keys(linksData);
+                const doneCount = doneIds.length;
+                const ratio = ((doneCount / total) * 100).toFixed(1);
 
-                // 統計の更新
                 document.getElementById('totalCount').textContent = total.toLocaleString();
-                document.getElementById('doneCount').textContent = done.toLocaleString();
+                document.getElementById('doneCount').textContent = doneCount.toLocaleString();
                 document.getElementById('percent').textContent = ratio + "%";
                 document.getElementById('progressBar').style.width = ratio + "%";
 
-                // テーブルの作成（links.jsonにあるものだけ表示）
+                // --- 都道府県別の計算 ---
+                const prefStats = {};
+                godData.forEach(city => {
+                    const p = city.都道府県名;
+                    if (!prefStats[p]) prefStats[p] = { total: 0, done: 0 };
+                    prefStats[p].total++;
+                    if (linksData[city.団体コード]) prefStats[p].done++;
+                });
+
+                const prefGrid = document.getElementById('prefGrid');
+                Object.keys(prefStats).forEach(p => {
+                    const stat = prefStats[p];
+                    const pRatio = ((stat.done / stat.total) * 100).toFixed(0);
+
+                    const div = document.createElement('div');
+                    div.className = 'pref-item' + (pRatio == 100 ? ' completed' : '');
+                    div.innerHTML = `
+                            <div class="pref-name">
+                                <span>${p}</span>
+                                <span>${pRatio}% (${stat.done}/${stat.total})</span>
+                            </div>
+                            <div class="pref-mini-bar">
+                                <div class="pref-mini-fill" style="width: ${pRatio}%"></div>
+                            </div>
+                        `;
+                    prefGrid.appendChild(div);
+                });
+
+                // --- 最近の登録リスト (最新50件) ---
                 const body = document.getElementById('tableBody');
-
-                // 表示用にgodDataから名前を引く
-                Object.entries(linksData).reverse().forEach(([code, data]) => {
-                    const cityInfo = godData.find(item => item.団体コード === code);
+                doneIds.reverse().slice(0, 50).forEach(code => {
+                    const city = godData.find(c => c.団体コード === code);
+                    const data = linksData[code];
                     const row = body.insertRow();
+                    row.insertCell(0).textContent = city ? (city.都道府県名 + city.市区町村名 + (city.政令指定都市名 || "")) : code;
 
-                    const name = cityInfo ? (cityInfo.都道府県名 + cityInfo.市区町村名 + (cityInfo.政令指定都市名 || "")) : "不明 (" + code + ")";
-                    row.insertCell(0).textContent = name;
-
-                    let tags = "";
-                    if (data.isApp) tags += '<span class="tag tag-app">📱アプリ</span> ';
-                    if (data.isPdf) tags += '<span class="tag tag-pdf">📄PDF</span>';
-                    row.insertCell(1).innerHTML = tags;
-
-                    const urlCell = row.insertCell(2);
-                    urlCell.innerHTML = `<a href="${data.url}" target="_blank">表示</a>`;
-
-                    row.insertCell(3).textContent = data.memo || "";
+                    let tags = data.isApp ? '<span class="tag tag-app">📱アプリ</span>' : '';
+                    tags += data.isPdf ? '<span class="tag tag-pdf">📄PDF</span>' : '';
+                    row.insertCell(1).innerHTML = tags + `<a href="${data.url}" target="_blank" style="margin-left:5px">Link</a>`;
+                    row.insertCell(2).textContent = data.memo || "";
                 });
 
             } catch (e) {
                 console.error(e);
-                document.body.innerHTML += "<p style='color:red; text-align:center;'>links.json または god_cities.json が読み込めません。GitHubにアップロードされているか確認してください。</p>";
+                alert("links.jsonが見つかりません。まずは数件登録して保存・アップロードしてください。");
             }
         }
-
-
-        function filterTable() {
-            const input = document.getElementById('filterInput').value.toLowerCase();
-            const rows = document.getElementById('tableBody').getElementsByTagName('tr');
-            for (let row of rows) {
-                const text = row.cells[0].textContent.toLowerCase();
-                row.style.display = text.includes(input) ? "" : "none";
-            }
-        }
-
         init();
     </script>
 </body>
