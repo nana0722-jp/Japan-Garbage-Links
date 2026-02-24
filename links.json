@@ -1,4 +1,67 @@
 {
+  "102016": {
+    "url": "https://www.city.maebashi.gunma.jp/soshiki/kankyo/gomiseisaku/oshirase/2604.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る",
+    "updatedAt": "2026/2/24"
+  },
+  "102024": {
+    "url": "https://www.city.takasaki.gunma.jp/page/4075.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "102032": {
+    "url": "https://www.city.kiryu.lg.jp/kurashi/kankyo/gomi/1010921.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "102041": {
+    "url": "https://www.city.isesaki.lg.jp/soshiki/kankyobu/sigen/sigen/gomi/1485.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "102067": {
+    "url": "https://www.city.numata.gunma.jp/life/kankyo/gomi/1007053.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "102075": {
+    "url": "https://www.city.tatebayashi.gunma.jp/s026/kurashi/100/040/080/010/jitenR7.12.pdf",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "さんあ～る終了",
+    "updatedAt": "2026/2/24"
+  },
+  "102091": {
+    "url": "https://www.city.fujioka.gunma.jp/soshiki/sinrinkankyobu/seisocenter/4/sana_ru2022.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "104493": {
+    "url": "https://www.town.minakami.gunma.jp/life/09sumai/gomi/2017-0104-1229-71.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "104647": {
+    "url": "https://www.town.tamamura.lg.jp/docs/2019010400036/",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る",
+    "updatedAt": "2026/2/24"
+  },
   "111007": {
     "url": "https://www.city.saitama.lg.jp/001/006/010/007/p041882.html",
     "isApp": true,
@@ -148,6 +211,111 @@
   },
   "113654": {
     "url": "https://www.c-kouiki.jp/gomi-2-2-2-2-2-2/katei-1/",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "122319": {
+    "url": "https://www.city.inzai.lg.jp/0000006906.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "131041": {
+    "url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00016.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る",
+    "updatedAt": "2026/2/24"
+  },
+  "131121": {
+    "url": "https://www.city.setagaya.lg.jp/02241/415.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "131164": {
+    "url": "https://www.city.toshima.lg.jp/150/2307040915.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "132012": {
+    "url": "https://www.city.hachioji.tokyo.jp/kurashi/gomi/kateigomi/dashikata/p033357.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "132241": {
+    "url": "https://www.city.tama.lg.jp/kurashi/gomi/bunbetsu/1002097.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "132284": {
+    "url": "https://www.city.akiruno.tokyo.jp/0000013242.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "142018": {
+    "url": "https://www.city.yokosuka.kanagawa.jp/4105/bunbetsu/gomiapp-3r.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "142034": {
+    "url": "https://www.city.hiratsuka.kanagawa.jp/kankyo/page68_00003.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "142085": {
+    "url": "https://www.city.zushi.kanagawa.jp/kurashi/gomirecycle/1002014/1002017.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "142115": {
+    "url": "https://www.city.hadano.kanagawa.jp/soshiki/7/1046/1/2/1/458.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "142166": {
+    "url": "https://www.city.zama.kanagawa.jp/kurashi/gomi/bunbetsu/1002121.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "142174": {
+    "url": "https://www.city.minamiashigara.kanagawa.jp/kurashi/gomi/gomi/p08033.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "142182": {
+    "url": "https://www.city.ayase.kanagawa.jp/soshiki/recycleplaza/gomi_kankyo/3/1/271.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/24"
+  },
+  "143014": {
+    "url": "https://www.town.hayama.lg.jp/soshiki/kankyou/1/1/2/15898.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
