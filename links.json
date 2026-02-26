@@ -1532,11 +1532,130 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/26"
   },
+  "442011": {
+    "url": "https://www.city.oita.oita.jp/o252/gomikinow.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "大分市公式アプリ内",
+    "updatedAt": "2026/2/26"
+  },
+  "442020": {
+    "url": "https://www.city.beppu.oita.jp/seikatu/kankyou_gomi/g_siwake/kensaku.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "442038": {
+    "url": "https://www.city-nakatsu.jp/doc/2021060200016/",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "442046": {
+    "url": "https://www.city.hita.oita.jp/soshiki/shiminkankyobu/kankyoka/seikatsukankyo/seikatu/gomi/8642.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "442054": {
+    "url": "https://www.city.saiki.oita.jp/dynamic/word_l/pub/default.aspx?c_id=30",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "442062": {
+    "url": "https://www.city.usuki.oita.jp/categories/shimin/seikatsu/gomi/",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "442071": {
+    "url": "https://www.city.tsukumi.oita.jp/soshiki/26/29508.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "442089": {
+    "url": "https://www.city.taketa.oita.jp/kurashi_tetsuzuki/gomi_recycling/trash/trash/3763.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "分別詳細無",
+    "updatedAt": "2026/2/26"
+  },
+  "442097": {
+    "url": "https://www.city.bungotakada.oita.jp/garbage-item/search/search.php",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "442101": {
+    "url": "https://www.city.kitsuki.lg.jp/gomi/gomidashikensaku/kana.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "442119": {
+    "url": "https://www.city.usa.oita.jp/sougo/soshiki/11/seikatsukankyo/recycle/kateigomi/22379.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "宇佐市ごみ分別辞典",
+    "updatedAt": "2026/2/26"
+  },
   "442127": {
     "url": "https://www.bungo-ohno.jp/docs/2022033100043/",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/26"
+  },
+  "442135": {
+    "url": "https://www.city.yufu.oita.jp/kurashi/kankyougomieco/article_82588/article_82589",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "由布市ごみ分別辞典",
+    "updatedAt": "2026/2/26"
+  },
+  "442143": {
+    "url": "https://www.city.kunisaki.oita.jp/soshiki/kankyo-eisei/gomikeikakuhyou.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "国東市ごみ収集計画表内",
+    "updatedAt": "2026/2/26"
+  },
+  "443221": {
+    "url": "https://www.himeshima.jp/kurashi/gomi-shuushuu/",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "分別詳細無",
+    "updatedAt": "2026/2/26"
+  },
+  "443417": {
+    "url": "https://www.town.hiji.lg.jp/gomidashi_search.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "444618": {
+    "url": "https://www.town.kokonoe.oita.jp/docs/2016120700100/",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "444626": {
+    "url": "https://www.town.kusu.oita.jp/gomi_search/kateigomi/kana.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
     "updatedAt": "2026/2/26"
   },
   "452017": {
