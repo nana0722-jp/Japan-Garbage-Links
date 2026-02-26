@@ -1280,6 +1280,13 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "312011": {
+    "url": "https://www.city.tottori.lg.jp/www/contents/1574057087612/index.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
   "312029": {
     "url": "https://www.city.yonago.lg.jp/23285.htm",
     "isApp": true,
@@ -1287,12 +1294,40 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "312037": {
+    "url": "https://www.city.kurayoshi.lg.jp/1878.htm",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
   "312045": {
     "url": "https://www.city.sakaiminato.lg.jp/index.php?view=113633",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "313025": {
+    "url": "https://www.iwami.gr.jp/1112.htm",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "313254": {
+    "url": "https://www.town.wakasa.tottori.jp/kurashi_tetsuzuki/seikatu-kankyou-anzen/gomi_recycle/3/634.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "313289": {
+    "url": "https://www1.town.chizu.tottori.jp/chizu/zeimu/gomi/bunbetsu/",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
   },
   "313297": {
     "url": "https://www.town.yazu.tottori.jp/site/gomi/6156.html",
@@ -1308,12 +1343,75 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "313700": {
+    "url": "https://www.yurihama.jp/soshiki/4/1431.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "313718": {
+    "url": "https://www.town.kotoura.tottori.jp/docs/2014022800010/",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "ごみの区分と出し方",
+    "updatedAt": "2026/2/26"
+  },
+  "313726": {
+    "url": "https://www.e-hokuei.net/2346.htm",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "313840": {
+    "url": "https://www.hiezu.jp/list/jumin/x935/a301/r245/c823/w500/",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "LINE　PDFあり",
+    "updatedAt": "2026/2/26"
+  },
   "313866": {
     "url": "https://www.daisen.jp/1/kurashi/6/1/a332/",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "313891": {
+    "url": "https://www.town.nanbu.tottori.jp/admin/chouminseikatsuka/gomi1/g141/",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "五十音別",
+    "updatedAt": "2026/2/26"
+  },
+  "313904": {
+    "url": "https://www.houki-town.jp/new1/10/12/gomi/6/search/",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "314013": {
+    "url": "https://www.town.nichinan.lg.jp/soshikikarasagasu/kankyouenergyka/gomi_kankyo_pet/1/19876.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "314021": {
+    "url": "https://www.town.hino.tottori.jp/4352.htm",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/26"
+  },
+  "314030": {
+    "url": "https://www.town-kofu.jp/2/1/4/9/2/g103/",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
   },
   "322032": {
     "url": "https://www.city.izumo.shimane.jp/www/contents/1487054520111/index.html",
