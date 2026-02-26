@@ -193,11 +193,17 @@
                 // --- 都道府県別の計算 ---
                 const prefStats = {};
                 godData.forEach(city => {
+                    // 🌟 市区町村名が空（または県庁行）は計算から除外する
+                    if (!city.市区町村名 || city.市区町村名 === "" || city.市区町村名 === city.都道府県名) {
+                        return; // スキップ
+                    }
+
                     const p = city.都道府県名;
                     if (!prefStats[p]) prefStats[p] = { total: 0, done: 0 };
                     prefStats[p].total++;
                     if (linksData[city.団体コード]) prefStats[p].done++;
                 });
+
 
                 const prefGrid = document.getElementById('prefGrid');
                 Object.keys(prefStats).forEach(p => {
