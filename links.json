@@ -594,12 +594,26 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "232106": {
+    "url": "https://www.city.kariya.lg.jp/shisei/koho/1011169/index.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "あいかりアプリ内",
+    "updatedAt": "2026/2/26"
+  },
   "232114": {
     "url": "https://www.city.toyota.aichi.jp/kurashi/gomi/gomi/1009913.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "232122": {
+    "url": "https://supportbot-admin.userlocal.jp/pages/334dfe366c5c823500e9d1d339014f29/form",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "公式LINEからも同じ",
+    "updatedAt": "2026/2/26"
   },
   "232131": {
     "url": "https://www.city.nishio.aichi.jp/kurashi/gomi/1001393/1001858.html",
@@ -629,6 +643,13 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "232173": {
+    "url": "https://www.city.konan.lg.jp/kurashi/gomi/1003230/1003267/1003269.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/26"
+  },
   "232190": {
     "url": "https://www.city.komaki.aichi.jp/admin/shimin/kankyokotsu/gomi/1_3/13/29788.html",
     "isApp": true,
@@ -650,6 +671,13 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "232220": {
+    "url": "https://www.city.tokai.aichi.jp/kurashi/1001699/1001700/1006481.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
   "232238": {
     "url": "https://www.city.obu.aichi.jp/kurashi/gomi/recycle/1027893.html",
     "isApp": true,
@@ -663,6 +691,13 @@
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "232254": {
+    "url": "https://www.city.chiryu.aichi.jp/section/gomichecker/gomichecker.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
   },
   "232262": {
     "url": "https://www.city.owariasahi.lg.jp/site/gomi-recycle/32949.html",
@@ -685,6 +720,20 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "232297": {
+    "url": "https://www.city.toyoake.lg.jp/secure/24437/R6hayami.pdf",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "232301": {
+    "url": "https://www.city.nisshin.lg.jp/department/seikatu/kankyou/6/2/8/dashikata/5271.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
   "232319": {
     "url": "https://www.city.tahara.aichi.jp/kurashi/gomi/1000837/1009145/1004956.html",
     "isApp": true,
@@ -706,12 +755,33 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "232343": {
+    "url": "https://www.city.kitanagoya.lg.jp/kurashi/gomi/1006476/1006477/1006096.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "232351": {
+    "url": "https://www.gomisaku.jp/0142/",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "ごみサク",
+    "updatedAt": "2026/2/26"
+  },
   "232360": {
     "url": "https://www.city.aichi-miyoshi.lg.jp/soshiki/shiminkeizai/kankyo/5_1/74.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "232378": {
+    "url": "https://www.city.ama.aichi.jp/kurashi/recycle/gomi/1002376.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
   },
   "232386": {
     "url": "https://www.city.nagakute.lg.jp/soshiki/kurashibunkabu/kankyoka/kurashi/gomi/gomi/dashikata/1885.html",
@@ -720,12 +790,40 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "233021": {
+    "url": "https://www.town.aichi-togo.lg.jp/kurashi_tetsuzuki/gomi_recycle/garbage_search/50_gomi/5124.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "233421": {
+    "url": "https://www.town.toyoyama.lg.jp/kurashi/sigen/1000736.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "233617": {
+    "url": "https://www.town.oguchi.lg.jp/FTPdirect/gomichecker/gomichecker.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
   "233625": {
     "url": "https://www.town.fuso.lg.jp/kurashi/1001651/1003417.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "234249": {
+    "url": "https://www.town.oharu.aichi.jp/4518.htm",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
   },
   "234257": {
     "url": "https://www.town.kanie.aichi.jp/soshiki/11/sana-ru.html",
@@ -740,6 +838,48 @@
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "234419": {
+    "url": "https://www.town.agui.lg.jp/0000005620.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "234427": {
+    "url": "https://www.town.aichi-higashiura.lg.jp/soshiki/kankyo/junkangata/gyomu/gomi/dashikata/1452566801186.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "234451": {
+    "url": "https://www.town.minamichita.lg.jp/kurashi/gomi/1000993/1003451/1003195.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "234460": {
+    "url": "https://www.town.aichi-mihama.lg.jp/kurashi-tetsuzuki/gomi-recycle/gomi-search/bunbetsu/kana.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "234478": {
+    "url": "https://www.town.taketoyo.lg.jp/kurashi/1001503/1001562/1003336.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "235016": {
+    "url": "https://www.town.kota.lg.jp/soshiki/12/1081.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
   },
   "235610": {
     "url": "https://www.town.shitara.lg.jp/soshiki/4/6522.html",
@@ -1182,6 +1322,13 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "372021": {
+    "url": "https://www.city.marugame.lg.jp/page/2399.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "丸亀市ごみ分別アプリ",
+    "updatedAt": "2026/2/26"
+  },
   "372030": {
     "url": "https://www.city.sakaide.lg.jp/soshiki/seikatukankyou/gomiapuri.html",
     "isApp": true,
@@ -1223,6 +1370,13 @@
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "384224": {
+    "url": "https://www.town.uchiko.ehime.jp/soshiki/10/gomiappli.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "うちこごみ分別アプリ",
+    "updatedAt": "2026/2/26"
   },
   "402036": {
     "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2030kankyougomi/3010dashikata/2025-0707-1418-54.html",
@@ -1285,6 +1439,13 @@
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
+    "updatedAt": "2026/2/26"
+  },
+  "452068": {
+    "url": "https://www.hyugacity.jp/sp/display.php?cont=201102145215",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "日向市アプリ",
     "updatedAt": "2026/2/26"
   },
   "453820": {
