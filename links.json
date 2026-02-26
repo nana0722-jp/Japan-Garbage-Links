@@ -1490,12 +1490,26 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "352021": {
+    "url": "https://www.city.ube.yamaguchi.jp/kurashi/gomi/dashikata/1002004.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "公式LINE内",
+    "updatedAt": "2026/2/26"
+  },
   "352039": {
     "url": "https://www.city.yamaguchi.lg.jp/site/gomisigen/84218.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "352047": {
+    "url": "https://www.city.hagi.lg.jp/site/line/",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "はぎなび内",
+    "updatedAt": "2026/2/26"
   },
   "352063": {
     "url": "https://www.city.hofu.yamaguchi.jp/soshiki/16/application.html",
@@ -1504,12 +1518,103 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "352071": {
+    "url": "https://www.gomisaku.jp/0331/",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "352080": {
+    "url": "https://www.iwakuni-news.com/introduce/",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "岩国市民ニュース内",
+    "updatedAt": "2026/2/26"
+  },
+  "352101": {
+    "url": "https://www.city.hikari.lg.jp/kurashi_tetsuzuki/gomi/bunbetu/8850.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
   "352110": {
     "url": "https://www.city.nagato.yamaguchi.jp/soshiki/8/31679.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "352128": {
+    "url": "https://www.city-yanai.jp/site/gomi-risaikuru/gomi-gaido.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "352136": {
+    "url": "https://www2.city.mine.lg.jp/useful/gomidashi/4770.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "352152": {
+    "url": "https://www.city.shunan.lg.jp/soshiki/19/1009.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "ごみの分別につかえるアプリ",
+    "updatedAt": "2026/2/26"
+  },
+  "352161": {
+    "url": "https://www.city.sanyo-onoda.lg.jp/soshiki/14/howtotrash3104.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "分別詳細無",
+    "updatedAt": "2026/2/26"
+  },
+  "353051": {
+    "url": "https://www.town.suo-oshima.lg.jp/garbage-item/search/search.php",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "353213": {
+    "url": "https://www.town.waki.lg.jp/soshiki/4/206.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "ごみの分別につかえるアプリ",
+    "updatedAt": "2026/2/26"
+  },
+  "353418": {
+    "url": "https://www.town.kaminoseki.lg.jp/%E3%81%94%E3%81%BF.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "ごみ分別カレンダー",
+    "updatedAt": "2026/2/26"
+  },
+  "353434": {
+    "url": "https://www.town.tabuse.lg.jp/soshiki/35/1741.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "353442": {
+    "url": "https://www.town.hirao.lg.jp/soshiki/digital/digital/line_account.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "公式LINE内",
+    "updatedAt": "2026/2/26"
+  },
+  "355020": {
+    "url": "https://www.town.abu.lg.jp/guide/gominosyuusyuunituite/",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "ごみの分別と出し方（５０音順）",
+    "updatedAt": "2026/2/26"
   },
   "362018": {
     "url": "https://www.city.tokushima.tokushima.jp/smph/kurashi/recycle/gomi/20180618112626387.html",
