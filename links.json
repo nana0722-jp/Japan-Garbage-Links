@@ -1413,12 +1413,138 @@
     "memo": "",
     "updatedAt": "2026/2/26"
   },
+  "322016": {
+    "url": "https://www.city.matsue.lg.jp/gomidashi/kateigomi/4358.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "322024": {
+    "url": "https://www.city.hamada.shimane.jp/www/contents/1638850424188/index.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "HAMADAごみ分別アプリ",
+    "updatedAt": "2026/2/26"
+  },
   "322032": {
     "url": "https://www.city.izumo.shimane.jp/www/contents/1487054520111/index.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "322041": {
+    "url": "https://www.city.masuda.lg.jp/kurashi_tetsuzuki/gomi_recycle/kateikaraderugomi/gomidashi/kateigomi/kana.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "322059": {
+    "url": "https://www.gomisaku.jp/0179/?lang=ja",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "322067": {
+    "url": "https://www.city.yasugi.shimane.jp/kurashi/gomi/gomi-recycle/tebiki.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "アプリでは分別検索できない",
+    "updatedAt": "2026/2/26"
+  },
+  "322075": {
+    "url": "https://www.city.gotsu.lg.jp/soshiki/12/8529.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "322091": {
+    "url": "https://www.unnan-yume.net/kankyo/gomi/e-book.php",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "PDFか電子書籍",
+    "updatedAt": "2026/2/26"
+  },
+  "323438": {
+    "url": "https://www.gomisaku.jp/0081/?lang=ja",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "323861": {
+    "url": "https://www.unnan-yume.net/kankyo/gomi-search/index.php?action=search",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "324418": {
+    "url": "https://www.gomisaku.jp/0129/?lang=ja",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "324485": {
+    "url": "https://gov.town.shimane-misato.lg.jp/kurasi/kankyo/246/guide",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "324493": {
+    "url": "https://www.town.ohnan.lg.jp/www/contents/1001000000425/index.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "325015": {
+    "url": "https://www.town.tsuwano.lg.jp/www/contents/1000000358000/index.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "325058": {
+    "url": "https://www.town.yoshika.lg.jp/kurashi/seikatsu/gomi/gomi.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "325252": {
+    "url": "https://www.town.ama.shimane.jp/kurashi-tetsuduki/kurashi/gomi-recycle/r44t8e7yf3",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "分別詳細無",
+    "updatedAt": "2026/2/26"
+  },
+  "325261": {
+    "url": "https://www.town.nishinoshima.shimane.jp/bunya/b_sumai/b_gomi/833",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/26"
+  },
+  "325279": {
+    "url": "http://www.vill.chibu.lg.jp/gyosei/organization/soshiki/org-kensetsu/org-kensetsu01/444",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "分別詳細無",
+    "updatedAt": "2026/2/27"
+  },
+  "325287": {
+    "url": "https://www.town.okinoshima.shimane.jp/www/sp/contents/1673928417591/index.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/27"
   },
   "332020": {
     "url": "https://www.city.kurashiki.okayama.jp/kurashi/kankyo/1003645/1013690/1003691.html",
