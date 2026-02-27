@@ -1784,12 +1784,103 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "372048": {
+    "url": "https://www.city.zentsuji.kagawa.jp/soshiki/9/r7syusyukeikaku.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "分別詳細無",
+    "updatedAt": "2026/2/27"
+  },
+  "372056": {
+    "url": "https://www.city.kanonji.kagawa.jp/garbage-item/search/search.php",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
+  "372064": {
+    "url": "https://www.city.sanuki.lg.jp/kurashi/gomikankyo/gomi-recycle/1/2/4493.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "分別詳細無",
+    "updatedAt": "2026/2/27"
+  },
+  "372072": {
+    "url": "https://www.higashikagawa.jp/gomi_search/kateigomi/3395.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
+  "372081": {
+    "url": "https://www.city.mitoyo.lg.jp/gomi_search/kateigomi/kana.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
+  "373222": {
+    "url": "https://www.town.tonosho.kagawa.jp/gyosei/benri_service/gomi_kensaku/kateigomi/kana.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
+  "373249": {
+    "url": "https://www.town.shodoshima.lg.jp/gyousei/kakuka/jyumin_seikatsu/1_3/1/451.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
+  "373419": {
+    "url": "https://www.town.miki.lg.jp/life/dtl.php?hdnKey=7236",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
+  "373648": {
+    "url": "https://www.town.naoshima.lg.jp/oshirase/environment/gomidashi.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
+  "373869": {
+    "url": "https://www.town.utazu.lg.jp/site/navi/1074.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
   "373877": {
     "url": "https://www.town.ayagawa.lg.jp/docs/2020032100019/",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "374032": {
+    "url": "https://www.town.kotohira.kagawa.jp/soshiki/6/9583.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
+  "374041": {
+    "url": "https://www.town.tadotsu.kagawa.jp/gomidashi_navi/gomidashi/search.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/27"
+  },
+  "374067": {
+    "url": "https://www.town.manno.lg.jp/site/life-stage/1252.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/27"
   },
   "382027": {
     "url": "https://www.city.imabari.ehime.jp/recycle/app_3R/",
