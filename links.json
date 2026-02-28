@@ -524,6 +524,125 @@
     "memo": "",
     "updatedAt": "2026/2/28"
   },
+  "182010": {
+    "url": "https://www.city.fukui.lg.jp/kurasi/kankyo/kgomi/gomile.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "182028": {
+    "url": "https://www.city.tsuruga.lg.jp/garbage-item/search/search.php",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "182044": {
+    "url": "https://www1.city.obama.fukui.jp/kurashi/eisei-kankyo/gominokaishu-dashikata/p006084.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "182052": {
+    "url": "https://www.city.ono.fukui.jp/kurashi/kankyo-sumai/gomi-recycle/gomi_line.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "LINE検索",
+    "updatedAt": "2026/2/28"
+  },
+  "182061": {
+    "url": "https://www.city.katsuyama.fukui.jp/soshiki/5/27661.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "182079": {
+    "url": "https://www.city.sabae.fukui.jp/kurashi_tetsuduki/gomi_risaikuru/kateigomi/gominobunbetsu.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "182087": {
+    "url": "https://www.city.awara.lg.jp/mokuteki/life/life03/life0302/p001154.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "182095": {
+    "url": "https://www.city.echizen.lg.jp/office/kankyounourin/051/gomirecycle/dasikata-wakekata.html#LINE",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "LINE検索",
+    "updatedAt": "2026/2/28"
+  },
+  "182109": {
+    "url": "https://www.city.fukui-sakai.lg.jp/kankyou/kurashi/gomi/shushubi/gomisapo.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "ごみサポ",
+    "updatedAt": "2026/2/28"
+  },
+  "183229": {
+    "url": "https://www.town.eiheiji.lg.jp/200/206/216/217/p001320.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "183822": {
+    "url": "https://www.town.ikeda.fukui.jp/kurashi/anzen/1361/p001241.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "184047": {
+    "url": "https://www.town.minamiechizen.lg.jp/kurasi/101/116/p001929.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "184233": {
+    "url": "https://www.town.echizen.fukui.jp/kurashi/05/01/p006314.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "184420": {
+    "url": "https://www.town.fukui-mihama.lg.jp/site/gomi/7497.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "184811": {
+    "url": "https://www.town.takahama.fukui.jp/page/jyuminseikatu/p007845.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "ごみサポ",
+    "updatedAt": "2026/2/28"
+  },
+  "184837": {
+    "url": "https://www.town.ohi.fukui.jp/1001/1204/27/p19945.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "ごみサポ",
+    "updatedAt": "2026/2/28"
+  },
+  "185019": {
+    "url": "https://www.town.fukui-wakasa.lg.jp/soshiki/kankyoanzenka/gyomuannai/1/488.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "ごみサポ",
+    "updatedAt": "2026/2/28"
+  },
   "212016": {
     "url": "https://www.city.gifu.lg.jp/kurashi/gomi/1028372.html",
     "isApp": true,
