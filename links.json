@@ -2414,6 +2414,20 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/26"
   },
+  "452025": {
+    "url": "https://www.city.miyakonojo.miyazaki.jp/soshiki/6/10992.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "LINE検索",
+    "updatedAt": "2026/2/28"
+  },
+  "452033": {
+    "url": "https://www.city.nobeoka.miyazaki.jp/soshiki/25/22559.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
   "452041": {
     "url": "https://www.city.nichinan.lg.jp/soshikikarasagasu/bikasuishinka/2/1110.html",
     "isApp": true,
@@ -2435,6 +2449,41 @@
     "memo": "日向市アプリ",
     "updatedAt": "2026/2/26"
   },
+  "452076": {
+    "url": "https://www.city.kushima.lg.jp/main/city/garbage-recycle/cat3/post-319.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "452084": {
+    "url": "https://www.city.saito.lg.jp/kurashi/post_761.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "452092": {
+    "url": "https://www.city.ebino.lg.jp/mokuteki/gomi_kensaku/50_gomi/3217.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "453412": {
+    "url": "https://www.town.mimata.lg.jp/contents/104.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "453617": {
+    "url": "https://www.town.takaharu.lg.jp/soshiki/20230402/1123.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
   "453820": {
     "url": "https://www.town.kunitomi.miyazaki.jp/main/living/trash/page001665.html",
     "isApp": true,
@@ -2449,12 +2498,96 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/26"
   },
+  "454010": {
+    "url": "https://www.town.takanabe.lg.jp/kurashi_tetsuzuki/gomi_kankyo_eisei/kateigomi/gomidashikensaku.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "454028": {
+    "url": "https://www.town.shintomi.lg.jp/item/2096.htm",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "454036": {
+    "url": "https://www.vill.nishimera.lg.jp/village/a-00-villagelife/10000448",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "454044": {
+    "url": "https://www.town.kijo.lg.jp/sosikikarasagasu/tyouminka/1/416.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
   "454052": {
     "url": "https://www.town.kawaminami.miyazaki.jp/soshiki/15/14323.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/26"
+  },
+  "454061": {
+    "url": "https://www.town.tsuno.lg.jp/article?articleId=604b0d9e4783b30b6c60e368",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "454214": {
+    "url": "https://www.town.kadogawa.lg.jp/live/refuse/page004836.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "分別詳細無",
+    "updatedAt": "2026/2/28"
+  },
+  "454290": {
+    "url": "https://www.vill.morotsuka.miyazaki.jp/soshiki/1002/4/13.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "454303": {
+    "url": "https://www.vill.shiiba.miyazaki.jp/tax/garvage/index.php",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "454311": {
+    "url": "https://www.town.miyazaki-misato.lg.jp/kiji003161/index.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "454419": {
+    "url": "https://www.town-takachiho.jp/top/soshiki/chominsekatsu/2/3/372.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "454427": {
+    "url": "https://www.town.hinokage.lg.jp/docs/2016020200199/",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "454435": {
+    "url": "https://www.town.gokase.miyazaki.jp/kakuka/choumin/gomi/120.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
   },
   "462012": {
     "url": "https://www.city.kagoshima.lg.jp/shigenseisaku/gomi/kate/3r/3rindex.html",
