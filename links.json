@@ -1329,12 +1329,138 @@
     "memo": "",
     "updatedAt": "2026/2/26"
   },
+  "252018": {
+    "url": "https://www.city.otsu.lg.jp/kurashi/g/b/s/5471.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "分けナビ",
+    "updatedAt": "2026/2/28"
+  },
+  "252026": {
+    "url": "https://www.city.hikone.lg.jp/kakuka/seiso/gomibunbetu/3458.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "252034": {
+    "url": "http://www.kohoku-kouiki.jp/shimin/gomi_dashikata.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "こほくる〜る",
+    "updatedAt": "2026/2/28"
+  },
+  "252042": {
+    "url": "https://www.city.omihachiman.lg.jp/kurashi/gomi/5/3462.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "近江八幡市ごみ分別アプリ",
+    "updatedAt": "2026/2/28"
+  },
   "252069": {
     "url": "https://www.city.kusatsu.shiga.jp/kurashi/gomirecycle/gominodashikata/genryo20161001.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "252077": {
+    "url": "https://www.city.moriyama.lg.jp/kurashitetsuzuki/gomi/1001605/1008195/1001620.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "守山市ごみ分別アプリ",
+    "updatedAt": "2026/2/28"
+  },
+  "252085": {
+    "url": "https://www.city.ritto.lg.jp/kurashi_bamen/gomi/4779.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "252093": {
+    "url": "https://www.city.koka.lg.jp/24483.htm",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "こうか　ごみ分別アプリ",
+    "updatedAt": "2026/2/28"
+  },
+  "252107": {
+    "url": "https://www.city.yasu.lg.jp/soshiki/kankyou/gomi/Application/116.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "野洲市ごみ分別アプリ",
+    "updatedAt": "2026/2/28"
+  },
+  "252115": {
+    "url": "https://www.city.shiga-konan.lg.jp/kurashi/gomi/kateigomi/3818.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "252123": {
+    "url": "https://www.gomisaku.jp/0058/",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "252131": {
+    "url": "https://www.gomisaku.jp/0323/?lang=ja",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "252140": {
+    "url": "https://www.city.maibara.lg.jp/soshiki/chikishinko/kankyo/gomi/22062.html",
+    "isApp": true,
+    "isPdf": false,
+    "memo": "こほくる～る",
+    "updatedAt": "2026/2/28"
+  },
+  "253839": {
+    "url": "https://www.gomisaku.jp/0323/?lang=ja",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "253847": {
+    "url": "https://www.gomisaku.jp/0323/?lang=ja",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "254258": {
+    "url": "https://www.town.aisho.shiga.jp/gomi_search/kateigomi/1991.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "254410": {
+    "url": "https://www.town.toyosato.shiga.jp/module/garbage.php",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "254428": {
+    "url": "https://www.kouratown.jp/kurashi/bamenkarasagasu/gomirecycle/1398135610971.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "254436": {
+    "url": "https://www.town.taga.lg.jp/contents_detail.php?frmId=443",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
   },
   "261009": {
     "url": "https://kyoto-kogomi.net/sanr/",
