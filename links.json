@@ -1882,12 +1882,40 @@
     "memo": "",
     "updatedAt": "2026/2/27"
   },
+  "382019": {
+    "url": "https://www.gomisaku.jp/0252/?lang=ja",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
   "382027": {
     "url": "https://www.city.imabari.ehime.jp/recycle/app_3R/",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "382035": {
+    "url": "https://www.city.uwajima.ehime.jp/soshiki/15/gomi-bunrui2025.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "382043": {
+    "url": "https://www.city.yawatahama.ehime.jp/doc/2021022400010/",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "382051": {
+    "url": "https://www.city.niihama.lg.jp/soshiki/haiki/pamphlet.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
   },
   "382060": {
     "url": "https://www.city.saijo.ehime.jp/soshiki/eisei/gomi1.html",
@@ -1896,12 +1924,54 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "382078": {
+    "url": "https://www.city.ozu.ehime.jp/soshiki/kankyo/0745.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
   "382108": {
     "url": "https://www.city.iyo.lg.jp/kankyohozen/gomibunnbetuppuri.html",
     "isApp": true,
     "isPdf": false,
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
+  },
+  "382132": {
+    "url": "https://www.city.shikokuchuo.ehime.jp/soshiki/15/1924.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "382141": {
+    "url": "https://www.city.seiyo.ehime.jp/kakuka/seikatsu_fukushi/kankyo_eisei/gomi/311.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "382159": {
+    "url": "https://www.city.toon.ehime.jp/site/141/1130.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "383562": {
+    "url": "https://www.town.kamijima.lg.jp/soshiki/5/665.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "383864": {
+    "url": "https://www.kumakogen.jp/soshiki/4/6951.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
   },
   "384011": {
     "url": "https://www.town.masaki.ehime.jp/site/gomi/gomi-apuri.html",
@@ -1910,12 +1980,47 @@
     "memo": "さんあ～る導入済み",
     "updatedAt": "2026/2/25"
   },
+  "384020": {
+    "url": "https://www.town.tobe.ehime.jp/gomi_search/bunbetsu_search/bunbetsu.html",
+    "isApp": false,
+    "isPdf": false,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
   "384224": {
     "url": "https://www.town.uchiko.ehime.jp/soshiki/10/gomiappli.html",
     "isApp": true,
     "isPdf": false,
     "memo": "うちこごみ分別アプリ",
     "updatedAt": "2026/2/26"
+  },
+  "384429": {
+    "url": "https://www.town.ikata.ehime.jp/soshiki/32/11452.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "384844": {
+    "url": "https://www.town.matsuno.ehime.jp/soshiki/9/1333.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "384887": {
+    "url": "https://www.town.kihoku.ehime.jp/soshiki/kankyou/58.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
+  },
+  "385069": {
+    "url": "https://www.town.ainan.ehime.jp/kurashi/tetsuduki/kankyoeisei/gomi/R412bunbetsu.html",
+    "isApp": false,
+    "isPdf": true,
+    "memo": "",
+    "updatedAt": "2026/2/28"
   },
   "402036": {
     "url": "https://www.city.kurume.fukuoka.jp/1050kurashi/2030kankyougomi/3010dashikata/2025-0707-1418-54.html",
